@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            font-size: 70px;
+            text-align: center;
+            background-color: red;
+            color: aqua;
+            display: none;
+        }
+
+        @media (max-width:300px) {
+            #box-1{
+                display: block;
+                background-color: blue;
+            }
+        }
+
+        @media (max-width:500px) and (min-width:300px){
+            #box-2{
+                display: block;
+                background-color: greenyellow;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px){
+            #box-3{
+                display: block;
+                background-color: yellow;
+                color: black;
+            }
+        }
+
+        @media  (min-width:800px){
+            #box-4{
+                display: block;
+                background-color: rosybrown;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">I am iron man</div>
+    <div class="box" id="box-2">I am swanand</div>
+    <div class="box" id="box-3">I am jayade</div>
+    <div class="box" id="box-4">This is mediaQueries</div>
+</body>
+</html>
